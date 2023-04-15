@@ -1,0 +1,110 @@
+.timeline {
+    position: relative;
+    padding-top: 2rem;
+    max-width: 1250px;
+    margin: -2rem auto auto;
+}
+.timeline::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 5%;
+    width: 0.2rem;
+    height: 100%;
+    margin-left: -0.125rem;
+    background-color: var(--theme-30);
+}
+.timeline__item {
+  margin-bottom: 20px;
+  position: relative;
+}
+.timeline__item::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.timeline__item:nth-child(2n) .timeline__item__content {
+  float: right;
+}
+.timeline__item:nth-child(2n) .timeline__item__content::before {
+  content: '';
+  right: 40%;
+}
+.timeline__item:last-child {
+  margin-bottom: 0;
+}
+.timeline__item-bg {
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  color: #fff;
+}
+.timeline__item__station {
+    margin-left: -0.5rem;
+    padding: 0.25rem;
+    background-color: var(--background);
+    position: absolute;
+    border-radius: 50%;
+    top: 3rem;
+    left: 5%;
+    border: 0.2rem solid var(--theme-60);
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.timeline__item__content {
+    flex: 1 1 auto;
+    width: 85%;
+    position: static;
+    float: right;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+.timeline__item__content::before {
+    content: '';
+    position: absolute;
+    left: 5%;
+    background: var(--theme-30);
+    top: 3.5rem;
+    width: 10%;
+    z-index: -1;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    height: 0.2rem;
+    margin-top: -0.125rem;
+}
+
+.timeline .box_img{
+    aspect-ratio: 16 / 5;
+}
+.timeline .cat_album_out img {
+    aspect-ratio: 4 / 5;
+}
+@media (min-width: 800px){
+    .timeline::before{
+        left: 50%;
+    }
+    .timeline__item {
+        margin-bottom: -6rem!important;
+    }
+    .timeline__item:last-child {
+        margin-bottom: 0!important;
+    }
+    .timeline__item:nth-child(2n) .timeline__item__content::before{
+        left: inherit;
+    }
+    .timeline__item__station{
+        left: 50%;
+        top: 2.5rem;
+        margin-left: -0.5rem;
+        width: 1rem;
+        height: 1rem;
+    }
+    .timeline__item__content{
+        width: 40%;
+        float: inherit;
+    }
+    .timeline__item__content::before{
+        left: 40%;
+        top: 3rem;
+      }
+}

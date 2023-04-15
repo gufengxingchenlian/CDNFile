@@ -1,0 +1,178 @@
+/*1200start*/
+@media (max-width:1200px) {
+    .cat_diary_image_li img {
+        display: block!important;
+    }
+    .cat_comment_child .cat_comment_replyout .cat_comment_body .content .substance>p {
+        max-width:80%!important;
+    }
+    #cat_comment .cat_comment_child .cat_comment_replyout .cat_comment_body .content .substance .aplayer {
+        max-width: 210px;
+    }
+}
+/*1200end*/
+
+.cat_hide {
+    display: none!important;
+}
+.cat_hide_margin {
+    margin :0!important;
+}
+#cat_comment .diary_top {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--theme-60);
+}
+#cat_comment .diary_bottom {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+}
+#cat_comment .diary_bottom .diary_bottom_right {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#cat_comment .diary_bottom .diary_bottom_right .button{
+    display: inline-block;
+    margin: 0 0.4rem;
+    color: var(--colorF);
+    transition: color 0.5s;
+}
+#cat_comment .diary_bottom .diary_bottom_right .button:hover{
+    color: var(--theme-30);
+}
+#cat_comment select{
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+#cat_comment > ol > li {
+    padding: var(--margin) 3rem;
+}
+#cat_comment > ol > li:first-child {
+    margin-top: 0;
+}
+.cat_comment_parent .cat_comment_replyout .cat_comment_body .cat_comment_reply,
+.cat_comment_parent .cat_comment_replyout .cat_comment_body .content .user,
+.cat_comment_child .diary_top,
+.cat_comment_child .diary_bottom{
+    display: none!important;
+}
+.cat_comment_child .cat_comment_replyout .cat_comment_body .cat_comment_reply,
+.cat_comment_child .cat_comment_replyout .cat_comment_body .content .user{
+    display: block!important;
+}
+#cat_comment .cat_comment_body .content .substance {
+    width: auto!important;
+    max-width: 100%!important;
+}
+#cat_comment .cat_comment_parent>.cat_comment_replyout .cat_comment_body .content .substance{
+    display: inline-block!important;
+    max-width:100%!important;
+    width:100%!important;
+}
+.cat_comment_parent .cat_comment_replyout .cat_comment_body .content .substance>p{
+    background: none!important;
+    max-width: 100%!important;
+    width: 100%!important;
+    line-height: 2.5rem!important;
+    padding: 0 0.5rem!important;
+    margin: auto;
+}
+#cat_comment .cat_comment_child .cat_comment_replyout .cat_comment_body .content .substance .aplayer{
+    margin: 5px;
+    width: auto;
+}
+.cat_comment_child .cat_comment_replyout .cat_comment_body .content .substance>p{
+    width: auto!important;
+    padding: 0.4rem!important;
+    line-height: 1.75rem!important;
+    margin: 0;
+    min-height: 2.5rem;
+}
+.cat_comment_parent .cat_comment_replyout .cat_comment_body {
+    margin-left: 3rem;
+}
+#cat_comment>ol>.cat_comment_parent>.cat_comment_replyout .cat_comment_body{
+    margin: 1rem 0!important;
+}
+#cat_comment>ol>li>.comment-children>ol>li>.cat_comment_replyout .cat_comment_body{
+    margin: 1rem 0!important;
+}
+#cat_comment .cat_comment_body .avatar{
+    width: 2rem!important;
+    height: 2rem!important;
+}
+#cat_comment>ol>li>.comment-children>ol>li>.cat_comment_replyout .avatar {
+    width: 3rem!important;
+    height: 3rem!important;
+}
+#cat_comment .diary_weather {
+    color: var(--theme-60);
+    font-size: 4rem;
+    float: right;
+    position: absolute;
+    right: 0;
+    top: -1rem;
+    transform: rotateZ(10deg);
+}
+#cat_comment>ol>li>.comment-children>ol>li>.cat_comment_replyout .cat_left_line,
+#cat_comment>ol>li>.comment-children>ol>li>.cat_comment_replyout .cat_left_circle{
+    display: none;
+}
+
+#cat_comment>ol>.cat_comment_parent>.cat_comment_replyout .cat_comment_body .cat_left_line,
+#cat_comment>ol>.cat_comment_parent>.cat_comment_replyout .cat_comment_body .cat_left_circle{
+    display: none;
+}
+
+/* 隐藏次级评论 */
+#cat_comment>ol>li>.comment-children {
+    display: none;
+}
+#cat_comment .diary_bottom .diary_bottom_right .eye_button_close {
+    display: none;
+}
+.cat_diary_single_num {
+    display: inline-block;
+    color: var(--colorF);
+}
+/* 隐藏次级评论 end */
+
+.likedavatar img {
+    width: 1.5rem;
+    border-radius: 0.3rem;
+    margin: 0 0.5rem;
+    vertical-align: bottom;
+}
+.beforelike,.afterlike {
+    display: inline-block;
+    margin: 0 -0.5rem 0 0;
+    color: var(--colorF);
+}
+.like_word {
+    color: var(--colorF);
+    vertical-align: top;
+    display: inline-block;
+}
+.noonelike_word {
+    color: var(--colorF);
+    font-size: small;
+}
+
+.diary_input_authorinfo{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    margin: 0.5rem 0;
+    gap: 0.5rem;
+}
+.diary_input_hidden{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    margin-bottom: 0.5rem;
+    gap: 0.5rem;
+}
